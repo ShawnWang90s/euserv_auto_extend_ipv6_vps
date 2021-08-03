@@ -29,5 +29,9 @@ jobs:
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
-          TOKEN: ${{ secrets.TOKEN }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          TG_API_HOST: ${{ secrets.TG_API_HOST }}
+          SCKEY: ${{ secrets.SCKEY }}
+          SRE24_TOKEN: ${{ secrets.SRE24_TOKEN }}
         run: python main.py
